@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 // Bai1
-        Console.WriteLine("=== Bài 1: Nhap ten va tuoi ===");
+Console.WriteLine("=== Bài 1: Nhap ten va tuoi ===");
 
         Console.Write("Nhap ten: ");
         string ten = Console.ReadLine() ?? "";
@@ -12,8 +12,8 @@
 
 
 // Bai2
-
-        Console.Write("Nhap chieu dai: ");
+Console.WriteLine("=== Bài 2: tính dien tích HCN ===");
+Console.Write("Nhap chieu dai: ");
         double chieudai = double.TryParse(Console.ReadLine(), out double dai) ? dai : 0;
 
         Console.Write("Nhap chieu rong: ");
@@ -23,13 +23,14 @@
 
         Console.WriteLine($"Dien tich hinh chu nhat la: {dienTich}");
 // Bai3
-   
-        Console.Write("Nhao do C:");
+Console.WriteLine("=== Bài 3:  chuyen đoi nhiet đo tu đo C sang đo F ===");
+Console.Write("Nhao do C:");
         double C = double.Parse(Console.ReadLine() ?? "");
         double F = (C * 9 / 5) + 32;
         Console.WriteLine($"{C} do C bang {F} do F");
 // Bai4
-        Console.Write("Nhap so:");
+Console.WriteLine("=== Bài 4: kiem tra xem so đo co phai là so chan , le , 0 ===");
+Console.Write("Nhap so:");
         try
         {
             int so = int.Parse(Console.ReadLine() ?? "");
@@ -47,6 +48,7 @@
             Console.WriteLine("Nhap dung so nguyen di");
         }
 // Bai5()
+Console.WriteLine("=== Bài 5: tong và tích cua hai so ===");
         double a, b, tong, tich;
         Console.Write("Nhap so a:");
         a = double.Parse(Console.ReadLine() ?? "");
@@ -57,6 +59,7 @@
         tich = a * b;
         Console.WriteLine($"Tong = {tong} va tich = {tich} ");
 // Bai6
+Console.WriteLine("=== Bài 6: kiem tra xem mot so la so duong hay am hay la 0 ===");
         while (true)
         {
             Console.Write("Nhap mot so: ");
@@ -84,8 +87,9 @@
                 Console.WriteLine("Loi: Vui long nhap dung mot so!");
             }
         }
-// Bai7()
-        Console.WriteLine("=== Bai 7: Kiem tra nam nhuan ===");
+// Bai7
+
+Console.WriteLine("=== Bai 7: Kiem tra nam nhuan ===");
 
         while (true)
         {
@@ -111,6 +115,8 @@
             }
         }
 // Bai8
+Console.WriteLine("=== Bai 8:  in ra bang cuu chương tu 1 đen 10 ===");
+
         for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine($"Bang nhan {i}");
@@ -121,6 +127,7 @@
             }
         }
 // Bai9
+Console.WriteLine("=== Bai 9: tính giai thua của mot so nguyen dương n ===");
         while (true)
         {
             Console.Write("Nhap so nguyen duong: ");
@@ -148,7 +155,8 @@
                 Console.WriteLine("Loi: Vui long nhap dung mot so nguyen!");
             }
         }
-// Bai10()
+// Bai10
+Console.WriteLine("=== Bai 10: kiem tra xem mot so có phải là so nguyen to hay khong ===");
         while (true)
         {
             Console.Write("nhap mot so nguyen: ");
